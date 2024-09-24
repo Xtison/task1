@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Титл</title>
+    </head>
+    <body>
+        <ul>
+        <li><a href="http://kubsu.ru/">КубГу</a></li>
+        <li><a href="https://kubsu.ru/">КубГу</a></li>
+        <li><a href="http://kubsu.ru/"><img src="img/image.jpg" width="500px"></a></li>
+        <li><a href="index.html">На внутреннее</a></li>
+        <li><a href="/">На главную</a></li>
+        <li><a href="index.html?p1=1&p2=2&p3=3">3 параметра</a></li>
+        <li><a id="id" href="http://kubsu.ru/">Ссылка с id</a></li>
+        <li><a href="./index.html">В этой директории</a></li>
+        <li><a href="./lv1/index.html">Уровнем выше</a></li>
+        <li><a href="./lv1/lv2/index.html">Двумя уровнями выше</a></li>
+        <li>Текст абзаца <a href="http://kubsu.ru/">Контексная ссылка в тексте</a> продолжение текста абзаца</li>
+        <li><a href="https://www.kubsu.ru/ru/rangedlist">Ссылка на фрагмент</a></li>
+        <li><a href="">Пустой href</a></li>
+        <li><a>Без href</a></li>
+        <li><a rel="nofollow" href="http://kubsu.ru/">Запрещён переход</a></li>
+        <li><a rel="noindex" href="http://kubsu.ru/">Запрещена индексация</a></li>
+        <ul>
+            <li><a href="http://kubsu.ru/">Первая вложенная</a></li>
+            <li><a href="http://kubsu.ru/">Вторая вложенная</a></li>
+            <li><a href="http://kubsu.ru/">Третья вложенная</a></li>
+        </ul>
+        <li><a href="ftp://user:pass123@tavalik.ru/Temp/file%20new.txt">FTP</a></li>
+        </ul>
+<form action="/"
+      method="POST">
+
+      <label>
+        Однострочное текстовое поле:<br />
+        <input name="fieldname1"
+          value="начальное значение" />
+      </label><br />
+
+      <label>
+        Текстовое поле email:<br />
+        <input name="fieldemail"
+          type="mail"
+          placeholder="Введите почту" />
+      </label><br />
+
+      <label>
+        Текстовое поле даты:<br />
+        <input name="fielddate"
+          value="2024-09-18"
+          type="date" />
+      </label><br />
+
+      <label>
+        Многострочное текстовое поле:<br />
+        <textarea name="fieldname2">начальное значение</textarea>
+      </label><br />
+
+      <label>
+        Список combobox:<br />
+        <select name="fieldname3">
+          <option value="Значение1">Метка1</option>
+          <option value="Значение2" selected="selected">Метка2</option>
+          <option value="Значение3">Метка3</option>
+        </select>
+      </label><br />
+
+      <label>
+        Список (listbox с множественным выбором):
+        <br />
+        <select name="fieldname4"
+          multiple="multiple">
+          <option value="Значение1">Метка1</option>
+          <option value="Значение2" selected="selected">Метка2</option>
+          <option value="Значение3" selected="selected">Метка3</option>
+        </select>
+      </label><br />
+
+      Радиокнопки:<br />
+      <label><input type="radio" checked="checked"
+        name="radio1" value="Значение1" />
+        Подпись радиокнопки 1</label>
+      <label><input type="radio"
+        name="radio1" value="Значение2" />
+        Подпись радиокнопки 2</label><br />
+
+      Чекбокс:<br />
+      <label><input type="checkbox" checked="checked"
+        name="check1" />
+        Подпись чекбокса ставим справа</label><br />
+
+
+      <input type="submit" value="Отправить" />
+    </form>
+    </body>
