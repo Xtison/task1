@@ -68,67 +68,66 @@
         </div>
         <div style="max-width:800px; background-color:#7c7c7c; margin: 0 auto; margin-top:20px; padding:10px; text-align: justify; border: 2px;">
             <form action="/"
-      method="POST">
-
-      <label>
-        Однострочное текстовое поле:<br />
-        <input name="fieldname1"
-          value="начальное значение" />
+    method="POST">
+    <label>
+        ФИО:<br />
+        <input name="field-name-1" value="Начальное значение" />
+    </label><br />
+    <label></label>
+        email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту" />
       </label><br />
+    </label>
+    Номер телефона:<br />
+    <input name="field-tel"
+      type="tel"
+      placeholder="Введите номер телефона" />
+  </label><br />
 
       <label>
-        Текстовое поле email:<br />
-        <input name="fieldemail"
-          type="mail"
-          placeholder="Введите почту" />
-      </label><br />
-
-      <label>
-        Текстовое поле даты:<br />
-        <input name="fielddate"
-          value="2024-09-18"
+        Дата рождения:<br />
+        <input name="field-date"
+          value="2019-08-13"
           type="date" />
       </label><br />
 
       <label>
-        Многострочное текстовое поле:<br />
-        <textarea name="fieldname2">начальное значение</textarea>
+        Биография:<br />
+        <textarea name="field-name-2">начальное значение</textarea>
       </label><br />
 
       <label>
-        Список combobox:<br />
-        <select name="fieldname3">
-          <option value="Значение1">Метка1</option>
-          <option value="Значение2" selected="selected">Метка2</option>
-          <option value="Значение3">Метка3</option>
-        </select>
-      </label><br />
-
-      <label>
-        Список (listbox с множественным выбором):
+        Язык программирования:
         <br />
-        <select name="fieldname4"
+        <select name="field-name-4[]"
           multiple="multiple">
-          <option value="Значение1">Метка1</option>
-          <option value="Значение2" selected="selected">Метка2</option>
-          <option value="Значение3" selected="selected">Метка3</option>
+          <option value="Значение1">Pascal</option>
+          <option value="Значение2" selected="selected">C</option>
+          <option value="Значение3" selected="selected">C++</option>
+          <option value="Значение4" selected="selected">JavaScript</option>
+          <option value="Значение5" selected="selected">PHP</option>
+          <option value="Значение6" selected="selected">Python</option>
+          <option value="Значение7" selected="selected">Java</option>
+          <option value="Значение8" selected="selected">Haskel</option>
+          <option value="Значение9" selected="selected">Clojure</option>
+          <option value="Значение10" selected="selected">Prolog</option>
+          <option value="Значение11" selected="selected">Scala</option>
         </select>
       </label><br />
 
-      Радиокнопки:<br />
+      Пол:<br />
       <label><input type="radio" checked="checked"
-        name="radio1" value="Значение1" />
-        Подпись радиокнопки 1</label>
+        name="radio-group-1" value="value1" /> Мужской</label>
       <label><input type="radio"
-        name="radio1" value="Значение2" />
-        Подпись радиокнопки 2</label><br />
+        name="radio-group-1" value="value2" />Женский</label><br />
 
-      Чекбокс:<br />
+      <br />
       <label><input type="checkbox" checked="checked"
-        name="check1" />
-        Подпись чекбокса ставим справа</label><br />
+        name="check-1" /> Данные верны</label><br />
 
-
+      Кнопка отправки формы:
       <input type="submit" value="Отправить" />
     </form>
         </div>
